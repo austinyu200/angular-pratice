@@ -7,12 +7,15 @@
   </h3>
   <p *ngIf="product.description">
     Description: {{ product.description }}
-    <!-- foo : {{product.name}} -->
   </p>
   <p *ngIf="product.price">price: {{ product.price }}</p>
   <button type="button" (click)="share()">
     share
   </button>
+    <app-product-alerts
+    [product]="product"
+    (notify) = "onNotify()">
+  </app-product-alerts>
 </div>
 
 <!-- 

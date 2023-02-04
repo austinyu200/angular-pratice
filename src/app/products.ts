@@ -5,15 +5,6 @@ export interface Product {
   description: string;
 }
 
-export const foo = [
-  {
-    id: 1,
-    name: 'Phone XL',
-    price: 799,
-    description: 'A large phone with one of the best screens',
-  },
-];
-
 export const products = [
   {
     id: 1,
@@ -31,7 +22,7 @@ export const products = [
     id: 3,
     name: 'Phone Standard',
     price: 299,
-    //description: '',
+    description: '',
   },
   {
     id: 5,
